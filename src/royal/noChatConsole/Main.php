@@ -21,7 +21,7 @@ class Main extends PluginBase implements Listener
     public function onChat(PlayerChatEvent $event): void
     {
         foreach ($this->getServer()->getOnlinePlayers() as $player) {
-            $player->sendMessage($event->getFormatter()->format($event->getPlayer()->getDisplayName(), $event->getMessage()), $event->getRecipients());
+            $player->sendMessage($event->getFormatter()->format($event->getPlayer()->getDisplayName(), $event->getMessage()));
 
         }
         if ($this->config->get("active_logs")) {
