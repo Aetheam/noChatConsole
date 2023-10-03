@@ -1,0 +1,5 @@
+author: royal
+api: 5.0.0
+main: royal\noChatConsole\Main
+version: 1.0.0
+name: noChatConsole
